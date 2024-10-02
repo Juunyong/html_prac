@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>기본속성 : html</title>
+    </head>
+    <body>
+        <!-- heading-->
+        <!-- 웹페이지에 표시할 제목 또는 부제목-->
+        <h1>네이버</h1>
+        <h2>news standard</h2>
+        <h3>경제</h3>
+
+        <hr />
+        <!-- p: paragraph 일반적인 텍스트 블록-->
+        <p>문단의 단락을 의미합니다</p>
+        <pre>
+            문단의 단락을
+            의미합니다.
+        </pre>
+        <hr />
+        <strong>중요한 텍스트</strong>
+        <!-- 리스트의 제목 -->
+        <b>굵은 텍스트</b>
+        <!-- 중요하진 않은데, 그냥 볼드체가 쓰고싶어-->
+        <em>그냥ㅈ저냥</em>
+        <address>주소 서울시 서초구</address>
+        <!-- a : 링크 -->
+        <!-- 페이지를 연결할 때 사용하는 태그-->
+
+        <!-- 절대경로-->
+        <a href="https://www.naver.com" title="새창열림">네이버</a>
+
+        <!-- 상대경로-->
+        <!-- 나를 기준으로 상대의경로를 찾음-->
+        <a href="./기본설정.html">기본설정</a>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/script.js"></script>
+        <!--메일연결-->
+        <a href="mailto:mail@mail.com">mailto</a>
+        <!--전화연결-->
+        <a href="tel:010-1234-5678">call me</a>
+        <!-- button : js를 처리하고 싶을 때-->
+        <button onclick="document.location='default.asp'">버튼</button>
+        <!-- img 태그 - 이미지 추가 시 사용-->
+        <img
+            src="https://ssl.pstatic.net/melona/libs/1512/1512610/59f11335426adda4322d_20240930180118713.jpg"
+            alt="현대해상이요"
+        />
+        <!-- 상대경로-->
+        <img src="/59f11335426adda4322d_20240930180118713.jpg" alt="" />
+        <img src="./59f11335426adda4322d_20240930180118713.jpg" alt="" />
+    </body>
+</html>
