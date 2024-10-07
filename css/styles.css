@@ -1,0 +1,30 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: -0.4px; /* 네이버의 뜻을 따르기 */
+    line-height: 1.5;
+    color: #222328;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* layout */
+#wrap {
+    background-color: lightcoral;
+    width: 1200px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.logo {
+    background-color: aliceblue;
+}
+
+#gnb dl {
+}
+
+#gnb dl dt {
+}
