@@ -118,5 +118,21 @@
         <input type="text" class="focus" placeholder="CLICK ME!!" />
         <hr />
         <button class="btnhover">MOUSE HOVER PLZ</button>
+        <hr />
+        <!-- 가상선탹자 ::before, ::after -->
+        <ul class="list2">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <style>
+            .list2::before {
+                content: 'ul 앞 내용';
+            }
+            .list2::after {
+                content: 'ul 뒷 내용';
+            }
+        </style>
     </body>
 </html>
