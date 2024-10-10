@@ -11,14 +11,39 @@
         <div class="box1">block</div>
         <div class="box2">inline</div>
         <style>
-            .box1 {
-                background-color: yellow;
-                width: auto;
-                height: auto;
+            /* 모바일 */
+            @media screen and (min-width: 600px) {
+                .box1 {
+                    background-color: rebeccapurple;
+                    max-width: none;
+                    height: auto;
+                    margin: auto;
+                }
             }
+            /* 데스크탑 */
+
             .box2 {
                 display: block;
                 background-color: red;
+                width: 500px;
+                height: 300px;
+            }
+        </style>
+        <button>버튼</button>
+        <style>
+            button {
+                min-width: 200px;
+                background-color: aqua;
+            }
+        </style>
+        <!-- 마진-->
+        <div class="margin"></div>
+        <style>
+            .margin {
+                width: 300%;
+                height: 300px;
+                margin: 100px 0 300px 200px;
+                background-color: orangered;
             }
         </style>
     </body>
