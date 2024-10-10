@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex</title>
+    </head>
+    <body>
+        <h1>css</h1>
+        <h2>flex</h2>
+
+        <div class="flex-container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <style>
+            .flex {
+                display: flex;
+            }
+        </style>
+
+        <div class="flex-container direction">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <style>
+            .direction {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-container {
+                background: olive;
+            }
+            .flex-container div {
+                background-color: rgb(117, 62, 37);
+                font-size: 30px;
+                margin: 10px;
+                padding: 20px;
+            }
+        </style>
+
+        <div class="flex-container wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <style>
+            .wrap {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .wrap div {
+                width: 25.5%;
+                margin: 1.5%;
+            }
+        </style>
+    </body>
+</html>
