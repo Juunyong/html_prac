@@ -8,8 +8,27 @@
     <body>
         <h1>css</h1>
         <h2>display</h2>
-        <div class="box1">block</div>
-        <div class="box2">inline</div>
+        <hr />
+        <div class="block">block</div>
+        <div class="block">block</div>
+        <style>
+            .block {
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+            }
+        </style>
+        <hr />
+        <span class="inline">inline</span>
+        <span class="inline">inline</span>
+        <style>
+            .inline {
+                display: inline-block; /*inline에 가로세로가 넣고싶다면 이렇게 */
+                height: 100px;
+                width: 100px;
+                background-color: bisque;
+            }
+        </style>
         <style>
             /* 모바일 */
             @media screen and (min-width: 600px) {

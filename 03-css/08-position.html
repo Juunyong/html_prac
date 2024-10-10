@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position</title>
+    </head>
+    <body>
+        <h1>css</h1>
+        <h2>position</h2>
+        <div class="rel">
+            <div class="sticky"></div>
+        </div>
+
+        <style>
+            .sticky {
+                position: sticky;
+                top: 110px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background-color: brown;
+            }
+        </style>
+        <!-- absolute -->
+        <header>header</header>
+        <div class="rel">
+            relative
+            <div class="abs">absolute</div>
+            <div class="abs2">absolute2</div>
+        </div>
+
+        <style>
+            header {
+                position: fixed;
+                z-index: 6;
+                top: 0;
+                left: 0;
+                background-color: midnightblue;
+                width: 100%;
+                height: 100px;
+            }
+            .rel {
+                position: relative;
+                width: 500px;
+                height: 500px;
+                background-color: paleturquoise;
+            }
+
+            .abs {
+                position: absolute;
+                z-index: 4;
+                top: 75px;
+                left: 250px;
+                width: 100px;
+                height: 100px;
+                background-color: orangered;
+            }
+            .abs2 {
+                position: absolute;
+                bottom: 200px;
+                left: 100px;
+                width: 200px;
+                height: 200px;
+                background-color: bisque;
+            }
+        </style>
+    </body>
+</html>
