@@ -9,12 +9,53 @@
         <h1>css</h1>
         <h2>float</h2>
         <div id="wrap">
-            <header>
+            <header class="clear">
                 <h1>logo</h1>
                 <nav>nav</nav>
             </header>
-            <main>main</main>
+            <main>
+                <ul>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                </ul>
+            </main>
             <footer>footer</footer>
         </div>
+        <style>
+            li {
+                z-index: -4;
+                display: inline-block;
+            }
+            ul li {
+                float: left;
+                list-style: none;
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+            }
+            ul {
+                background-color: brown;
+            }
+            h1 {
+                float: left;
+            }
+            nav {
+                float: right;
+            }
+            header {
+                overflow: hidden;
+                background-color: aqua;
+            }
+            main {
+                background-color: slateblue;
+            }
+            footer {
+                background-color: salmon;
+            }
+        </style>
     </body>
 </html>
