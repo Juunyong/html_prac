@@ -21,6 +21,7 @@
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,15 +30,26 @@ header {
 #gnb {
     display: flex;
     gap: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 #gnb dt a {
     display: flex;
     align-items: center;
     height: 100px;
-    background: lightblue;
+    padding: 0 20px;
+}
+#gnb dt a:hover {
+    color: green;
+    font-weight: 900;
+}
+#gnb dt a:hover dd {
+    display: block;
 }
 #gnb dd {
     display: none;
+    background-color: #fff;
 }
 .slide {
     overflow: hidden;
@@ -123,4 +135,38 @@ footer address {
 .sns a {
     display: inline-block;
     padding: 20px 10px;
+}
+
+#modal {
+    position: fixed;
+    display: none;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+#modal .modal-container {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.tit {
+    text-align: center;
+}
+
+.btn-close {
+    display: flex;
+    align-content: center;
 }
