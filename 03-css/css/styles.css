@@ -34,22 +34,47 @@ header {
     top: 0;
     right: 0;
 }
+#gnb::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+}
+
+#gnb:hover::before {
+    display: block;
+}
 #gnb dt a {
     display: flex;
     align-items: center;
     height: 100px;
     padding: 0 20px;
 }
+
+#gnb dt a::after {
+    content: '';
+}
 #gnb dt a:hover {
     color: green;
     font-weight: 900;
+    border-bottom: 4px solid orange;
 }
-#gnb dt a:hover dd {
+#gnb dt a:hover::after {
     display: block;
 }
 #gnb dd {
     display: none;
     background-color: #fff;
+}
+
+#gnb dl {
+    position: relative;
+    z-index: 10;
+    min-width: 110px;
 }
 .slide {
     overflow: hidden;
