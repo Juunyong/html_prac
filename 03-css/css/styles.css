@@ -93,14 +93,40 @@ header {
 }
 .slide {
     overflow: hidden;
+    position: relative;
+    height: 300px;
 }
 .slide ul {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide_change 10s infinite alternate;
 }
 .slide ul img {
     display: block;
 }
 
+@keyframes slide_change {
+    0% {
+        /*정지 */
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        left: -100%;
+    }
+    75% {
+        left: -200%;
+    }
+    100% {
+        left: -200%;
+    }
+}
 main {
     display: flex;
     justify-content: space-between;

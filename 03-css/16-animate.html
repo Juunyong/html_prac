@@ -35,6 +35,18 @@
                     left: 0;
                 }
             }
+
+            @keyframes ani-box2 {
+                0% {
+                    top: 0;
+                    left: 0;
+                }
+
+                100% {
+                    top: 400px;
+                    left: 400px;
+                }
+            }
             .wrap {
                 position: relative;
                 width: 500px;
@@ -53,6 +65,10 @@
                 background: lightgreen;
             }
             .box2 {
+                animation: ani-box2 3s forwards;
+                position: absolute;
+                top: 0;
+                left: 0;
                 background: lightcoral;
             }
         </style>
